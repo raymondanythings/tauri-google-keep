@@ -1,0 +1,70 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Google Keep",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "Productivity",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "Google.Keep",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "dialog" : true,
+      "endpoints" : [
+        "https://elijahlopez.ca/tauri-release/google-keep-desktop/{{target}}/{{current_version}}"
+      ],
+      "pubkey" : "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDQ5NTc1MzZGNzgwRUZBMTIKUldRUytnNTRiMU5YU1VJZERwakN6WVJLaXhBektaUmRXc2wvbkZRcXpHTUoxbkpCV21mUzhObFMK"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "visible" : false,
+        "title": "Google Keep"
+      }
+    ]
+  }
+}
